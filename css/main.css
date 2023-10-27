@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap');
+
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+:root {
+    --navy: #032936;
+    --teal: #176B87;
+    --darkteal: #115b74;
+    --orange: #e48731;
+    --darkorange: #cf7a2a;
+    --mint: #64CCC5;
+    --darkmint: #56beb7;
+    --winter: #DAFFFB;
+}
+
+html {
+    box-sizing: inherit;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    background-color: var(--navy);
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--winter);
+    padding: 3rem 4rem;
+}
+
+nav span {
+    cursor: pointer;
+}
+
+main {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    padding-inline: 2rem;
+}
+
+main .container {
+    display: block;
+    margin: 0 auto;
+    max-width: 90%;
+}
+
+.screen {
+    width: 100%;
+    font-size: 4rem;
+    padding: 3rem 1.5rem;
+    text-align: right;
+    outline: transparent;
+    border: 0;
+    color: var(--winter);
+    background-color: transparent;
+}
+
+.buttons-section {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    gap: 0.2rem;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+button {
+    padding: 2rem;
+    border: 0;
+    background-color: var(--mint);
+    color: var(--winter);
+    font-size: 1.5rem;
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: var(--darkmint);
+}
+
+.symbols {
+    background-color: var(--orange);
+}
+
+.symbols:hover {
+    background-color: var(--darkorange);
+}
+
+.operators {
+    background-color: var(--teal);
+}
+
+.operators:hover {
+    background-color: var(--darkteal);
+}
